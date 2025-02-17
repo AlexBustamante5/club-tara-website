@@ -9,20 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <style>
-      /* Flexbox for sticky footer */
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        display: flex;
-        flex-direction: column;
-      }
-      main {
-        flex: 1;
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -32,7 +19,11 @@
           <!-- Logo Column -->
           <div class="col-3">
             <a class="navbar-brand" href="index.html">
-              <img src="assets\dog.png" alt="Club Tara Logo" style="height: 40px;" />
+              <img
+                src="assets/dog.png"
+                alt="Club Tara Logo"
+                style="height: 40px;"
+              />
             </a>
           </div>
           <!-- Navigation Links Column -->
@@ -48,16 +39,19 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
               <ul class="navbar-nav">
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="team.html">Instructors</a>
                 </li>
                 <li class="nav-item px-3">
                   <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="reservations.html">Reservations</a>
                 </li>
               </ul>
             </div>
@@ -75,16 +69,19 @@
                   aria-expanded="false"
                 >
                   <img
-                    src="assets\united-kingdom.png"
+                    src="assets/united-kingdom.png"
                     alt="EN"
                     style="width:20px; margin-right:5px;"
                   />EN
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="languageDropdown"
+                >
                   <li>
                     <a class="dropdown-item" href="#">
                       <img
-                        src="assets\united-kingdom.png"
+                        src="assets/united-kingdom.png"
                         alt="EN"
                         style="width:20px; margin-right:5px;"
                       />EN
@@ -93,7 +90,7 @@
                   <li>
                     <a class="dropdown-item" href="#">
                       <img
-                        src="assets\france.png"
+                        src="assets/france.png"
                         alt="FR"
                         style="width:20px; margin-right:5px;"
                       />FR
@@ -126,20 +123,50 @@
 
       <!-- Why Choose Us Section -->
       <section class="container my-5">
-        <div class="row align-items-center">
-          <!-- Image Column (6 out of 12) -->
+        <div class="row align-items-start">
+          <!-- Left Column: Dog Image -->
           <div class="col-md-6">
-            <img src="assets\pexels-gilberto-reyes-259461-825947.jpg" alt="Dog profile" class="img-fluid" />
+            <img
+              src="assets/pexels-gilberto-reyes-259461-825947.jpg"
+              alt="Dog profile"
+              class="img-fluid"
+            />
           </div>
-          <!-- Text Column (6 out of 12) -->
-          <div class="col-md-6 text-end">
-            <h2>Why choose us?</h2>
-            <p>
-              Club Tara just revolutionized dog education with the best programs.
-            </p>
-            <a href="services.html" class="btn btn-outline-dark">
-              Our Services
-            </a>
+          <!-- Right Column: "Why choose us?" & Review -->
+          <div class="col-md-6">
+            <div class="text-end">
+              <h2>Why choose us?</h2>
+              <p>
+                We offer the best
+                programs for your best friend.
+              </p>
+              <a href="services.html" class="btn btn-outline-dark">
+                Discover our Services
+              </a>
+            </div>
+            <!-- Review Section -->
+            <div class="card p-4 shadow mt-5">
+              <!-- Star Rating -->
+              <div class="mb-3 text-end">
+                <span class="text-warning fs-4">&#9733;</span>
+                <span class="text-warning fs-4">&#9733;</span>
+                <span class="text-warning fs-4">&#9733;</span>
+                <span class="text-warning fs-4">&#9733;</span>
+                <span class="text-warning fs-4">&#9733;</span>
+              </div>
+              <!-- Review Text -->
+              <blockquote class="blockquote mb-3 text-end">
+                <p class="mb-0">
+                  Club Tara just<br />
+                  revolutionized<br />
+                  dog education
+                </p>
+              </blockquote>
+              <!-- Review Footer -->
+              <footer class="blockquote-footer text-end">
+                The journal
+              </footer>
+            </div>
           </div>
         </div>
       </section>
@@ -148,6 +175,14 @@
     <!-- Footer -->
     <footer class="bg-light text-center p-3">
       <div class="container">
+        <div class="d-flex justify-content-center gap-12 mb-2">
+          <a href="contact.html" class="text-decoration-none mx-2 small"
+            >Contact</a
+          >
+          <a href="legal.html" class="text-decoration-none mx-2 small"
+            >Legal Notice</a
+          >
+        </div>
         <p class="m-0">© 2025 Club Tara Inc. All rights reserved</p>
       </div>
     </footer>
