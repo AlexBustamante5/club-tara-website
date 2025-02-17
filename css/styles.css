@@ -11,3 +11,8 @@ body {
 main {
   flex: 1;
 }
+#confirmationOutline {
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px 0;
+  }

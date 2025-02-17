@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact - Club Tara</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      .contact-container {
+        margin-bottom: 4rem;
+      }
+      .dog-image-container {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .underline-input {
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+      .underline-div {
+        margin-bottom: 1.5rem;
+      }
+      .contact-box {
+        height: 100%;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center">
+          <!-- Logo Column -->
+          <div class="col-3">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/dog.png" alt="Club Tara Logo" style="height: 40px;" />
+            </a>
+          </div>
+          <!-- Navigation Links Column -->
+          <div class="col-6">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="reservations.html">Reservations</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Language Dropdown Column -->
+          <div class="col-3 text-end">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="languageDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/united-kingdom.png" alt="EN" style="width:20px; margin-right:5px;" />EN
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/united-kingdom.png" alt="EN" style="width:20px; margin-right:5px;" />EN
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/france.png" alt="FR" style="width:20px; margin-right:5px;" />FR
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="mb-3">Contact us</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container contact-container">
+      <div class="row min-vh-100">
+        <!-- Left 2/3 for the contact form -->
+        <div class="col-md-8">
+          <div class="contact-box">
+            <div class="row">
+              <!-- Form Fields on the left side -->
+              <div class="col-md-6">
+                <!-- Full name -->
+                <label for="fullName" class="form-label fw-bold">Full name</label>
+                <div class="underline-div">
+                  <input
+                    type="text"
+                    id="fullName"
+                    class="underline-input"
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                <!-- E-mail -->
+                <label for="email" class="form-label fw-bold">E-mail</label>
+                <div class="underline-div">
+                  <input
+                    type="email"
+                    id="email"
+                    class="underline-input"
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <!-- Message -->
+                <label for="message" class="form-label fw-bold">Message</label>
+                <div class="underline-div">
+                  <textarea
+                    id="message"
+                    class="underline-input"
+                    rows="3"
+                    placeholder="Your message"
+                    style="resize: none;"
+                  ></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button class="btn btn-dark px-4" type="button">Contact us</button>
+              </div>
+
+              <!-- Contact info & social media -->
+              <div class="col-md-6">
+                <!-- Contact Info Box -->
+                <div class="mb-4">
+                  <h5>Contact</h5>
+                  <p class="mb-0">clubtara@edu.ca</p>
+                  <p class="mb-0">+1 819 000 1010</p>
+                </div>
+
+                <!-- Address Info Box -->
+                <div class="mb-4">
+                  <h5>Address</h5>
+                  <p class="mb-0">1 treat Dr. Ottawa, Ontario</p>
+                  <p class="mb-0">K1N0Q0</p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div>
+                  <a href="#" class="me-2">
+                    <img
+                      src="assets/facebook-logo.png"
+                      alt="Facebook"
+                      style="width: 30px;"
+                    />
+                  </a>
+                  <a href="#" class="me-2">
+                    <img
+                      src="assets/tiktok-logo.png"
+                      alt="Tiktok"
+                      style="width: 30px;"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="assets/instagram-logo.png"
+                      alt="Instagram"
+                      style="width: 30px;"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 1/3 for the dog image -->
+        <div class="col-md-4 dog-image-container d-flex align-items-top justify-content-center min-vh-100">
+          <img
+            src="assets/dog-contact.png"
+            alt="Dog"
+            class="img-fluid"
+            style="max-height: 500px;"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center p-3">
+      <div class="container">
+        <div class="d-flex justify-content-center gap-12 mb-2">
+          <a href="contact.html" class="text-decoration-none mx-2 small">Contact</a>
+          <a href="legal.html" class="text-decoration-none mx-2 small">Legal Notice</a>
+        </div>
+        <p class="m-0">© 2025 Club Tara Inc. All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
