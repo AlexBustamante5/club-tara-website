@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Tara - Home</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* Flexbox for sticky footer */
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center">
+          <!-- Logo Column -->
+          <div class="col-3">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets\dog.png" alt="Club Tara Logo" style="height: 40px;" />
+            </a>
+          </div>
+          <!-- Navigation Links Column -->
+          <div class="col-6">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Language Dropdown Column -->
+          <div class="col-3 text-end">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="languageDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets\united-kingdom.png"
+                    alt="EN"
+                    style="width:20px; margin-right:5px;"
+                  />EN
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="assets\united-kingdom.png"
+                        alt="EN"
+                        style="width:20px; margin-right:5px;"
+                      />EN
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="assets\france.png"
+                        alt="FR"
+                        style="width:20px; margin-right:5px;"
+                      />FR
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <!-- Header Section -->
+      <header class="container my-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="mb-3">Club Tara</h1>
+            <p class="lead">
+              Elevate your canine’s social abilities and behavioral attitudes.
+            </p>
+            <a href="reservations.html" class="btn btn-dark btn-lg px-5">
+              Join the club
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Why Choose Us Section -->
+      <section class="container my-5">
+        <div class="row align-items-center">
+          <!-- Image Column (6 out of 12) -->
+          <div class="col-md-6">
+            <img src="assets\pexels-gilberto-reyes-259461-825947.jpg" alt="Dog profile" class="img-fluid" />
+          </div>
+          <!-- Text Column (6 out of 12) -->
+          <div class="col-md-6 text-end">
+            <h2>Why choose us?</h2>
+            <p>
+              Club Tara just revolutionized dog education with the best programs.
+            </p>
+            <a href="services.html" class="btn btn-outline-dark">
+              Our Services
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center p-3">
+      <div class="container">
+        <p class="m-0">© 2025 Club Tara Inc. All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
